@@ -5,6 +5,7 @@ module MailForm
     include ActiveModel::Conversion
     include ActiveModel::AttributeMethods
     include ActiveModel::Validations
+    include MailForm::Validators
 
     attribute_method_prefix 'clear_'
     attribute_method_suffix '?'
